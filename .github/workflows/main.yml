@@ -19,7 +19,7 @@ jobs:
           node-version: '14'
 
       - name: Print Name
-        run: echo "Nombre Completo: Roberto Osorno Liz"
+        run: echo "Roberto Osorno Liz"
 
       - name: Print Node Version
         run: node --version
