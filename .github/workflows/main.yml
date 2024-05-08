@@ -25,4 +25,4 @@ jobs:
         run: node --version
 
       - name: Print Expediente
-        run: echo "Expediente: 721033"
+        run: echo "721033"
