@@ -1,0 +1,28 @@
+name: Print Info
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  print-info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Print Name
+        run: echo "Nombre Completo: Roberto Osorno Liz"
+
+      - name: Print Node Version
+        run: node --version
+
+      - name: Print Expediente
+        run: echo "Expediente: 721033"
